@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Pedrosa Assessoria e Treinamentos em SSO oferece soluções em Segurança e Saúde Ocupacional. Consultoria, treinamentos e serviços especializados para a sua empresa.">
+    <meta name="keywords" content="Segurança do trabalho, Saúde ocupacional, Consultoria em SSO, Treinamentos em SSO, Gestão de eSocial, Avaliações ambientais, NR10, NR35, Acailandia, Açailândia, MA, Maranhão Maranhao">
+    <meta name="author" content="Pedrosa Assessoria e Treinamentos em SSO">
+    <meta property="og:title" content="Pedrosa Assessoria e Treinamentos em SSO">
+    <meta property="og:description" content="Pedrosa Assessoria e Treinamentos em SSO oferece soluções em Segurança e Saúde Ocupacional com serviços especializados em treinamentos, consultoria e gestão de eSocial.">
+    <meta property="og:image" content="URL_DA_IMAGEM_DO_SEU_SITE_AQUI.jpg"> <!-- Substitua pela URL de uma imagem relevante -->
+    <meta property="og:url" content="URL_DO_SEU_SITE_AQUI"> <!-- Substitua pela URL do seu site -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pedrosa Assessoria e Treinamentos em SSO">
+    <meta name="twitter:description" content="Soluções em Segurança e Saúde Ocupacional, oferecendo consultoria, treinamentos e serviços especializados.">
+    <meta name="twitter:image" content="URL_DA_IMAGEM_DO_SEU_SITE_AQUI.jpg"> <!-- Substitua pela URL de uma imagem relevante -->
+    <meta name="robots" content="index, follow">
+
+    <title>Pedrosa Assessoria - Segurança e Saúde Ocupacional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Função para abrir e fechar o menu
+        function toggleMenu() {
+            const menu = document.getElementById('hamburger-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Função para fechar o menu ao clicar fora dele
+        window.onclick = function(event) {
+            const menu = document.getElementById('hamburger-menu');
+            const menuButton = document.getElementById('menu-button');
+            if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-green-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="xl:text-2xl font-bold">Pedrosa SSO</h1>
+            <nav class="flex items-center">
+                <!-- Botão do menu hamburguer -->
+                <button id="menu-button" class="block lg:hidden text-white" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <!-- Menu -->
+                <ul id="menu" class="lg:flex space-x-4 hidden lg:block">
+                    <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+                    <li><a href="#servicos" class="hover:underline">Serviços</a></li>
+                    <li><a href="#treinamentos" class="hover:underline">Treinamentos</a></li>
+                    <li><a href="#contato" class="hover:underline">Contato</a></li>
+                    <li><a href="https://sistema.soc.com.br/WebSoc/" class="hover:underline">Área do cliente</a></li>
+                </ul>
+
+                <!-- Menu hamburguer -->
+                <ul id="hamburger-menu" class="lg:hidden absolute top-0 left-0 w-full bg-green-600 text-white space-y-4 py-4 px-6 hidden">
+                    <button onclick="toggleMenu()" class="absolute top-4 right-4 text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+                    <li><a href="#servicos" class="hover:underline">Serviços</a></li>
+                    <li><a href="#treinamentos" class="hover:underline">Treinamentos</a></li>
+                    <li><a href="#contato" class="hover:underline">Contato</a></li>
+                    <li><a href="https://sistema.soc.com.br/WebSoc/" class="hover:underline">Área do cliente</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="hero" class="bg-cover bg-center h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] flex items-center justify-center text-center text-white bg-[url('./assets/img/Background_Site.jpg')]">
+        <div class="bg-opacity-25">
+            <h2 class="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold">Pedrosa Assessoria e Treinamentos em SSO</h2>
+            <p class="mt-2 text-xl sm:text-2xl">Solução em Segurança e Saúde Ocupacional.</p>
+            <a href="https://wa.me/+5599991712587" target="_blank" class="mt-4 inline-block bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded">Entre em Contato</a>
+        </div>
+    </section>
+    
+    <section id="sobre" class="container mx-auto py-12 px-6 max-w-5xl">
+        <h2 class="text-3xl font-bold text-center text-green-400">Sobre Nós</h2>
+        <p class="mt-4 text-center text-lg sm:text-xl">A Pedrosa Assessoria e Treinamentos em SSO é uma empresa de Assessoria em Segurança e Saúde Ocupacional.
+            Nossa missão é transformar ambientes de trabalho cada vez mais seguros aos colaboradores.</p>
+    </section>
+    
+    <section id="servicos" class="container mx-auto py-12 px-6">
+        <h2 class="text-3xl font-bold text-center text-green-400">Nossos Serviços</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+            <div class="p-6 bg-gray-800 shadow-lg rounded-lg text-center">
+                <img src="./assets/img/esocial.png" class="w-full rounded-md" alt="Gestao de eSocial">
+                <h3 class="text-xl font-semibold mt-4 text-green-400">Gestão de eSocial</h3>
+            </div>
+            <div class="p-6 bg-gray-800 shadow-lg rounded-lg text-center">
+                <img src="./assets/img/consultoria.jpg" class="w-full rounded-md" alt="Consultoria">
+                <h3 class="text-xl font-semibold mt-4 text-green-400">Assessoria em Segurança do Trabalho</h3>
+            </div>
+            <div class="p-6 bg-gray-800 shadow-lg rounded-lg text-center">
+                <img src="./assets/img/pdca.webp" class="w-full xl:h-[280px] rounded-md" alt="Documentação">
+                <h3 class="text-xl font-semibold mt-4 text-green-400">Elaboração de PGR, PCMSO e LTCAT</h3>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+            <div class="p-6 bg-gray-800 shadow-lg rounded-lg text-center">
+                <img src="./assets/img/checklist.webp" class="w-full rounded-md" alt="Visita Técnica">
+                <h3 class="text-xl font-semibold mt-4 text-green-400">Visita Técnica</h3>
+            </div>
+            <div class="p-6 bg-gray-800 shadow-lg rounded-lg text-center">
+                <img src="./assets/img/higiene-ocupacional.jpg" class="w-full xl:h-[286px] rounded-md" alt="Avaliações Ambientais">
+                <h3 class="text-xl font-semibold mt-4 text-green-400">Avaliações Ambientais</h3>
+            </div>
+            <div class="p-6 bg-gray-800 shadow-lg rounded-lg text-center">
+                <img src="./assets/img/laudo.jpg" class="w-full xl:h-[286px] rounded-md" alt="Documentação">
+                <h3 class="text-xl font-semibold mt-4 text-green-400">Laudo de Insalubridade e Periculosidade</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section id="treinamentos" class="container mx-auto py-12 px-6">
+        <h2 class="text-3xl font-bold text-center text-green-400">Treinamentos</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+            <div class="p-6 bg-gray-800 shadow-lg rounded-lg text-center">
+                <img src="./assets/img/nr10.webp" class="w-full rounded-md" alt="NR-10">
+                <h3 class="text-xl font-semibold mt-4 text-green-400">NR-10: Segurança Elétrica</h3>
+            </div>
+            <div class="p-6 bg-gray-800 shadow-lg rounded-lg text-center">
+                <img src="./assets/img/nr35.jpg" class="w-full xl:h-[265px] rounded-md" alt="NR-35">
+                <h3 class="text-xl font-semibold mt-4 text-green-400">NR-35: Trabalho em Altura</h3>
+            </div>
+            <div class="p-6 bg-gray-800 shadow-lg rounded-lg text-center">
+                <img src="./assets/img/brigada.jpg" class="w-full rounded-md" alt="Brigada de Incêndio">
+                <h3 class="text-xl font-semibold mt-4 text-green-400">Brigada de Incêndio</h3>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+            <div class="p-6 bg-gray-800 shadow-lg rounded-lg text-center">
+                <img src="./assets/img/cipa.jpg" class="w-full rounded-md" alt="CIPA">
+                <h3 class="text-xl font-semibold mt-4 text-green-400">CIPA</h3>
+            </div>
+            <div class="p-6 bg-gray-800 shadow-lg rounded-lg text-center">
+                <img src="./assets/img/epis.png" class="w-full xl:h-[270px] rounded-md" alt="EPIs">
+                <h3 class="text-xl font-semibold mt-4 text-green-400">Uso de EPIs</h3>
+            </div>
+            <div class="p-6 bg-gray-800 shadow-lg rounded-lg text-center">
+                <img src="./assets/img/nr20.jpg" class="w-full xl:h-[270px] rounded-md" alt="Brigada de Incêndio">
+                <h3 class="text-xl font-semibold mt-4 text-green-400">NR-20: Segurança com líquidos inflamáveis</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contato" class="container mx-auto py-12 px-6">
+        <div class="text-center">
+            <a href="https://wa.me/+5599991712587" target="_blank" class="mt-4 inline-block bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-6 rounded">Entre em Contato</a>
+            <a href="https://www.instagram.com/pedrosa.assessoria.sso?utm_source=qr&igsh=MWh3M3VpZTc4aDZvcg==" target="_blank" class="mt-4 inline-block bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded">
+                Instagram
+            </a>
+        </div>
+    </section>
+    
+    <footer class="bg-green-600 text-white py-6 mt-12 text-center">
+        <p>&copy; 2025 Grupo Pedrosa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
