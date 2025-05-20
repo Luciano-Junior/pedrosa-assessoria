@@ -1,0 +1,15 @@
+{
+    "redirects": [
+        {
+            "source": "/(*)",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "grupopedrosa.com.br"
+                }
+            ],
+            "destination":"https://www.grupopedrosa.com.br/:1",
+            "statusCode": 301
+        }
+    ]
+}
