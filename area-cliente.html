@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <title>Clínica Pedrosa - Área do Cliente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-white text-gray-700">
+
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-lg bg-white/80 shadow-sm py-4 bg-white text-green-600 border-b-2 ">
+        <div class="container-content">
+            <div class="flex justify-between items-center">
+                <a href="./index.html">
+                    <svg class="text-green-500 max-w-48 h-auto fill-green-600" width="1011.659" height="378.769" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd" viewBox="0 0 26437.33 9898.29"><defs><style>@font-face{font-family:&quot;Good Times&quot;;font-variant:normal;font-style:normal;font-weight:400;src:url(#FontID0)format(svg)}.str0,.str2{stroke:#fff;stroke-width:19.75;stroke-miterlimit:22.9256}.str2{stroke-width:7.53}</style><font id="FontID0" horiz-adv-x="989" font-variant="normal" style="stroke-width:3.05;stroke-miterlimit:22.9256;fill-rule:nonzero" font-style="normal" font-weight="400"><font-face font-family="Good Times"><font-face-src><font-face-name name="Good Times Regular"/></font-face-src></font-face><missing-glyph/><glyph unicode="A" horiz-adv-x="989" d="M974.001 0 555.002 695.999c-15.003 25-33.003 41.002-61.003 41.002s-47-16.002-61.998-41.002L14 0h145l330 557.999 162-271.997H428l-60-103h344L821.002 0z"/><glyph unicode="C" horiz-adv-x="829" d="M788.998 0v127.001h-394c-131 0-225.997 100.998-225.997 238 0 138 96 234.999 225.997 234.999h394v127.001h-394C191.999 727.001 42 585.001 42 371.003 42 160.001 191.999.001 394.998.001z"/><glyph unicode="D" horiz-adv-x="879" d="M484 0c205.001 0 354.001 160.002 354.001 371S689.001 726.999 484 726.999H63V0zM188.999 127v472.998H484c131 0 227.001-97.999 227.001-235C711.001 228.001 615.001 127 484 127z"/><glyph unicode="E" horiz-adv-x="758" d="M712.998 0v127H188.999v472.998h523.002v127H62.999V-.001zm-27.997 315.999v107.003h-403V315.999z"/><glyph unicode="G" horiz-adv-x="888" d="M834.007 0v423H377.998V315.994h328.003V126.995H395c-130.993 0-226.005 101.002-226.005 237.999 0 138.008 96.008 235.012 226.005 235.012h394.005v126.995H395c-202.999 0-353.001-142.006-353.001-356.003C41.999 160.003 192.001 0 395 0z"/><glyph unicode="I" horiz-adv-x="266" d="M197.002 0v727H70.001V0z"/><glyph unicode="L" horiz-adv-x="706" d="M678.998 0v127.001H190.002V727H63.001V0z"/><glyph unicode="N" horiz-adv-x="872" d="M691.999 18c18-18 37.002-27.002 57.999-27.002 37.002 0 63 28 63 76.003v666h-121v-532L178.999 710c-19 19.003-34.997 26.003-54 26.003C85 736.002 60 707 60 660V0h121v532z"/><glyph unicode="O" horiz-adv-x="967" d="M572.002 0c206.999 0 355.999 160.002 355.999 371S782 726.999 572.002 726.999h-177c-202.999 0-353-141.997-353-355.999 0-210.998 150.001-371 353-371zm-177 127c-131 0-226 101.001-226 237.998 0 138.002 95.997 235 226 235h177C706 599.998 801 501.999 801 364.998 801 228.001 706 127 572.002 127z"/><glyph unicode="P" horiz-adv-x="866" d="M573.999 201.999c168.001 0 265.999 107.999 265.999 265.002 0 159.001-97.999 259.998-265.999 259.998h-511V0h125.999v599.998h385c88.999 0 142.002-52.999 142.002-136.997 0-82-53.003-138.002-142.002-138.002H282V201.998z"/><glyph unicode="R" horiz-adv-x="920" d="M917.999 0 699.002 220.999c94 36 149.996 120.999 149.996 241.001 0 161.999-97.999 264.998-263.997 264.998H62.999V-.001h125.999v599.998H585c86.997 0 138.999-45.996 138.999-140 0-94-47.998-145.997-138.999-145.997H282V201.997h272L737.999-.002h179.999z"/><glyph unicode="S" horiz-adv-x="880" d="M608.002 0c151.998 0 226 91 226 213 0 141.001-79.002 210.002-226 210.002H275c-55.997 0-91 32.997-91 87.998 0 55 34.002 88.998 92 88.998h522.003v127H276c-145 0-223.998-86.997-223.998-204C52.003 403 137.002 316 273.999 316h334.003c68 0 105.998-32 105.998-94 0-56.998-37.998-95-105.998-95H63V0z"/><glyph unicode="U" horiz-adv-x="888" d="M713.001 321.003c0-146.004-65.006-206.001-265.003-206.001S182.995 175 182.995 321.003v405.998H52.002V321.003c0-225.01 112-331.005 391.998-331.005 282.005 0 392.994 105.995 392.994 331.005v405.998H713.001z"/><glyph unicode="Ç" horiz-adv-x="828" d="M789.005 0v126.995H395c-130.993 0-226.005 101.002-226.005 237.999 0 138.008 96.008 235.012 226.005 235.012h394.005v126.995H395c-202.999 0-353.001-142.006-353.001-356.003C41.999 160.003 192.001 0 395 0zM433.998-200.993l66.998 153.999h-133z"/><glyph unicode="Í" horiz-adv-x="266" d="M197.002 0v727H70.001V0zm94.997 826.999v78.999L35.999 829v-57z"/><glyph unicode="Ú" horiz-adv-x="888" d="M713.001 321.003c0-146.004-65.006-206.001-265.003-206.001S182.995 175 182.995 321.003v405.998H52.002V321.003c0-225.01 112-331.005 391.998-331.005 282.005 0 392.994 105.995 392.994 331.005v405.998H713.001zM601.997 827.007v78.991l-255.997-77v-56.995z"/></font></defs><g id="Camada_x0020_1"><path class="fil0 str0" d="M9.88 5152.26h1592.35L3104.78 1860.3l1610.18 6548.66 704.86-3252.78 12263.22-2.29L19464.68 32.1l2537.66 8490.83 915.88-3370.03 3509.23-.64v316.76l-3278.44 5.44-1116.21 4078.81-2566.08-8312.47-1455 4228.24-12333.11.46-953.87 4385.01-1726.46-7025.59-1197.65 2643.31-1790.75-4.72z"/><text x="5135.5" y="4458.38" class="fil0 str2" style="font-weight:400;font-size:2462.13px;font-family:&quot;Good Times&quot;">CLÍNICA</text><text x="13383.41" y="6340.47" class="fil0 str2" style="font-weight:400;font-size:2358.4px;font-family:&quot;Good Times&quot;" transform="matrix(1.01888 0 0 1 -7739.07 1327.22)">PEDROSA</text><text x="13383.41" y="6340.47" class="fil0 str2" style="font-weight:400;font-size:654.7px;font-family:&quot;Good Times&quot;" transform="matrix(1.02526 0 0 1 -8018.01 2362.97)">SEGURANÇA E SAÚDE OCUPACIONAL</text><path class="fil0 str0" d="M22672.1 3637.09c15.88-223.25 65.54-512.68 196.35-696.8 126.07-177.45 370.58-258.63 580.27-316.28 55.33-15.21 157.16-41.03 215.27-45.72-13.9 14.23-86.61 28.26-106.27 33.6-101.43 27.55-211.69 64.7-305.59 104.69-319.26 135.91-423.25 281.27-487.18 616.02-27.03 141.53-49.66 351.48-46.94 501.9 27.34 29.44 105.26 82.47 145.85 106.55 27.55 16.36 147.16 82.08 190.23 58.35 7.15-13.98 9.86-278.96 15.6-327.68 20.15-170.98 56.55-403.94 124.05-558.85 40.51-92.94 79.72-139.13 146.58-199.46 93.13-84.04 322.81-173.55 474.75-209.51 142.2-33.66 315.38-50.28 467.26-40.97 21.12 1.3 152.41 12.27 157.6 10.78-9.69 5.11-150.22 11.89-178.5 15.19-53.89 6.28-113.47 15.09-165.74 27.38-101.39 23.82-204.49 51.86-296.82 88.72-199.4 79.62-352.83 144.79-452.6 319.51-86.73 151.91-116.88 448.9-119.21 653.68-.4 34.02-1.2 163.04 6.46 187.41 9.05 28.81 81.86 62.42 120.34 72.95 141.54 38.74 231.19 17.68 355.83 22.82-193.81 52.6-364.64 81.82-562.29 26.1-23.4-6.59-47.42 7.36-72.89 12.11-125.42 23.39-195.5-32.95-280.11-81.41-40.27-23.06-76.15-45.54-114.72-70.31-47.81-30.72-59.38-58.26-63.42-125.69-62.8-35.64-101.34-90.96-118.45-162.85-22.2-93.26 6.86-106.26-60.22-56.04-18.16 13.59-29.58 23.06-46.92 37.72-67.28 56.94-195.99 181.85-224.63 270.09-36.21 111.55 40.31 182.14 87.06 226.31 164.38 155.29 381.9 301.53 607.64 385.65 86.7 32.31 177.51 48.3 282.53 47.2 111.35-1.17 187.69-23.02 283.08-50.4 295.67-84.86 700.95-223.43 976.12-346.95 155.99-70.02 297.31-145.04 427.54-236.35 120.54-84.52 198.03-129.96 182.81-310.72-5.63-66.92-16.8-79.28-46.55-121.78-6.29 6.56-3.22.81-6.79 11.5-6.02 18.02 2.92 43.2-29.21 94.83-34.35 55.2-106.5 91.39-166.33 119.32-26.44 12.35-74.28 37.4-99.98 44.45-2.63-38.13-6.35-42.72 20.67-59.28 156.38-95.86 241.43-118.86 230.48-330.9-9.66-187.05-68.8-361.38-139.16-502.52-43.92-88.11-76.12-123.64-144.01-177.6-56.32-44.75-128.64-86.29-204.19-117.62-373.48-154.9-705.75-155.68-1093.28-48.96-186.16 51.26-315.49 108.72-435.83 212.06-166.85 143.27-272.08 419.66-307.71 657.56-7.87 52.53-11.89 92.92 1.74 145.5 9.83 37.93 36.78 85.03 79.4 84.68zM1567.98 6607.12h510.67v1057.82h1057.82v510.68H2078.65v1057.83h-510.67V8175.62H510.14v-510.68h1057.84z"/></g></svg>
+                </a>
+                <nav class="flex items-center">
+                    <!-- Botão do menu hamburguer -->
+                    <button id="menu-button" class="block lg:hidden text-green-600" onclick="toggleMenu()">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Menu -->
+                    <ul id="menu" class="lg:flex space-x-4 hidden lg:block text-green-600 font-semibold">
+                        <li><a href="./index.html#servicos" class="hover:underline">Serviços</a></li>
+                        <li><a href="./index.html#sobre" class="hover:underline">Sobre</a></li>
+                        <li><a href="./index.html#clientes" class="hover:underline">Clientes</a></li>
+                        <li><a href="./index.html#contato" class="hover:underline">Contato</a></li>
+                    </ul>
+
+                    <!-- Menu hamburguer -->
+                    <ul id="hamburger-menu" class="lg:hidden absolute top-0 left-0 w-full bg-white text-green-600 space-y-4 py-4 px-6 hidden">
+                        <button onclick="toggleMenu()" class="absolute top-4 right-4 text-green-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                        <li><a href="./index.html#servicos" class="hover:underline">Serviços</a></li>
+                        <li><a href="./index.html#sobre" class="hover:underline">Sobre</a></li>
+                        <li><a href="./index.html#clientes" class="hover:underline">Clientes</a></li>
+                        <li><a href="./index.html#contato" class="hover:underline">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="hidden md:block">
+                    <a href="./area-cliente.html" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 px-4 py-2 bg-sst-green hover:bg-sst-darkGreen text-white">
+                        Área do Cliente
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="mx-auto p-6 bg-white shadow-lg rounded-lg mt-32 mb-32 container-content">
+            <section id="servicos" class="section-padding bg-muted/30 relative">
+                <div class="container-content relative z-10">
+                    <div class="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Área do Cliente</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 animate-slide-up">
+                        <div class="p-6 rounded-2xl bg-white border border-border/40 shadow-subtle hover:shadow-card group transition-all duration-300 hover:translate-y-[-5px] text-center">
+                            <div class="mb-5 inline-flex p-3 rounded-xl bg-green-600 bg-opacity-25 text-green-700 text-opacity-80 group-hover:bg-green-600 group-hover:text-white transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd" viewBox="0 0 374.05 638.65"><path d="M170.54 638.65c226.03-.32 242.37-202.98 152.76-303.14-41.71-46.62-81.19-68.35-110.16-96.57-15.31-14.92-22.49-23.57-35.54-36.04-87.87-84.01-36.43-147.28-10.24-195.36C90 14.35 33.41 57.05 13.44 119.24-41.17 289.38 155.9 371.52 204.58 445.76c19.87 30.31 30.39 69.06 18.86 111.05-14.1 51.36-42.84 61.33-52.9 81.85z" style="fill:#51a7b0"/><path d="M121.76 637.28c22.57-.63 23.9 1.99 37.08-10.31.89-.83 3.15-3.43 3.99-4.3l15.82-17.83c11.5-16.12 23.51-36.72 27.54-61.17 17.94-108.74-84.53-150.32-137.31-202.55C49.48 321.92 12.56 274.53 0 239.5c4.99 114.47 135.18 161.08 149.33 277.91 7.55 62.31-10.84 74.65-27.58 119.87zm215.51-308.11c-20.49-36.96-42.24-45.82-67.33-71.11-42.06-42.4-110.44-98.29-93.41-173.93 8.62-38.29 32.45-59.69 48.88-84.13-40.01 4.17-61.86 13.16-78.3 71.69-26.14 93.08 85.9 170.6 148.09 220.26 17.72 14.15 19.44 26.73 42.07 37.23z" style="fill:#e5e6e6"/></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">
+                                SOC
+                            </h3>
+                            <p class="text-muted-foreground">
+                                <a href="https://sistema.soc.com.br/WebSoc/" target="_blank" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 px-4 py-2 bg-sst-green hover:bg-sst-darkGreen text-white">
+                                    Acessar
+                                </a>
+                            </p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-white border border-border/40 shadow-subtle hover:shadow-card group transition-all duration-300 hover:translate-y-[-5px] text-center">
+                            <div class="mb-5 inline-flex p-3 rounded-xl bg-green-600 bg-opacity-25 text-green-700 text-opacity-80 group-hover:bg-green-600 group-hover:text-white transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hard-hat h-6 w-6" data-lov-id="src/components/ui/ServiceCard.tsx:22:8" data-lov-name="Icon" data-component-path="src/components/ui/ServiceCard.tsx" data-component-line="22" data-component-file="ServiceCard.tsx" data-component-name="Icon" data-component-content="%7B%22className%22%3A%22h-6%20w-6%22%7D"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"></path><path d="M14 6a6 6 0 0 1 6 6v3"></path><path d="M4 15v-3a6 6 0 0 1 6-6"></path><rect x="2" y="15" width="20" height="4" rx="1"></rect></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">
+                                Treinamentos EAD
+                            </h3>
+                            <p class="text-muted-foreground">
+                                <a href="https://clinicapedrosa.isesmt.com/" target="_blank" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 px-4 py-2 bg-sst-green hover:bg-sst-darkGreen text-white">
+                                    Acessar
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-16 text-center hidden">
+                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border bg-background hover:text-accent-foreground h-11 rounded-md px-8 border-green-600/50 text-black hover:bg-green-600 hover:bg-opacity-10">
+                            Ver todos os serviços
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <footer id="contato" class="bg-black text-white pt-20 pb-10">
+        <div class="ml-auto mr-auto max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <svg class="text-green-500 max-w-48 h-auto fill-white" width="267.668mm" height="100.216mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 26437.33 9898.29">
+                            <defs>
+                             <font id="FontID0" horiz-adv-x="989" font-variant="normal" class="str1" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+                               <font-face font-family="Good Times">
+                                   <font-face-src>
+                                       <font-face-name name="Good Times Regular"/>
+                                   </font-face-src>
+                               </font-face>
+                              <missing-glyph><path d="M0 0z"/></missing-glyph>
+                              <glyph unicode="A" horiz-adv-x="989" d="M974.001 0l-418.999 695.999c-15.0031,24.9998 -33.0028,41.0018 -61.0032,41.0018 -28.0004,0 -46.999,-16.002 -61.9981,-41.0018l-418 -695.999 145 0 330 557.999 162.001 -271.997 -223 0 -60.0003 -103 344 0 109.001 -183.002 152.999 0z"/>
+                              <glyph unicode="C" horiz-adv-x="829" d="M788.998 0l0 127.001 -394 0c-131,0 -225.997,100.998 -225.997,238 0,138 95.9997,234.999 225.997,234.999l394 0 0 127.001 -394 0c-202.999,0 -352.998,-142 -352.998,-355.998 0,-211.002 149.999,-371.002 352.998,-371.002l394 0z"/>
+                              <glyph unicode="D" horiz-adv-x="879" d="M484 0c205.001,0 354.001,160.002 354.001,371 0,210.998 -149,355.999 -354.001,355.999l-421 0 0 -726.999 421 0zm-295.001 127l0 472.998 295.001 0c131,0 227.001,-97.9986 227.001,-235 0,-136.997 -96.0009,-237.998 -227.001,-237.998l-295.001 0z"/>
+                              <glyph unicode="E" horiz-adv-x="758" d="M712.998 0l0 127 -523.999 0 0 472.998 523.002 0 0 127 -649.002 0 0 -726.999 649.999 0zm-27.9966 315.999l0 107.003 -403 0 0 -107.003 403 0z"/>
+                              <glyph unicode="G" horiz-adv-x="888" d="M834.007 0l0 423 -456.009 0 0 -107.006 328.003 0 0 -188.999 -311.001 0c-130.993,0 -226.005,101.002 -226.005,237.999 0,138.008 96.0082,235.012 226.005,235.012l394.005 0 0 126.995 -394.005 0c-202.999,0 -353.001,-142.006 -353.001,-356.003 0,-210.995 150.002,-370.998 353.001,-370.998l439.007 0z"/>
+                              <glyph unicode="I" horiz-adv-x="266" d="M197.002 0l0 727 -127.001 0 0 -727 127.001 0z"/>
+                              <glyph unicode="L" horiz-adv-x="706" d="M678.998 0l0 127.001 -488.996 0 0 599.999 -127.001 0 0 -727 615.997 0z"/>
+                              <glyph unicode="N" horiz-adv-x="872" d="M691.999 17.9997c17.9997,-17.9997 37.0023,-27.0015 57.9986,-27.0015 37.0023,0 63.0009,28.0004 63.0009,76.0023l0 666.001 -121 0 0 -532 -513.001 508.998c-18.9986,19.0026 -34.9965,26.0027 -53.9991,26.0027 -39.9989,0 -64.9987,-29.0033 -64.9987,-76.0023l0 -660 121 0 0 532 511 -514z"/>
+                              <glyph unicode="O" horiz-adv-x="967" d="M572.002 0c206.999,0 355.999,160.002 355.999,371 0,210.998 -146.001,355.999 -355.999,355.999l-177 0c-202.999,0 -353,-141.997 -353,-355.999 0,-210.998 150.001,-371 353,-371l177 0zm-177 127c-131,0 -226,101.001 -226,237.998 0,138.002 95.9967,235 226,235l177 0c133.998,0 228.998,-97.9986 228.998,-235 0,-136.997 -95,-237.998 -228.998,-237.998l-177 0z"/>
+                              <glyph unicode="P" horiz-adv-x="866" d="M573.999 201.999c168.001,0 265.999,107.999 265.999,265.002 0,159.001 -97.9986,259.998 -265.999,259.998l-511 0 0 -726.999 125.999 0 0 599.998 385 0c88.9986,0 142.002,-52.9988 142.002,-136.997 0,-82.0005 -53.003,-138.002 -142.002,-138.002l-291.998 0 0 -123.001 291.998 0z"/>
+                              <glyph unicode="R" horiz-adv-x="920" d="M917.999 0l-218.997 220.999c93.9991,35.9998 149.996,120.999 149.996,241.001 0,161.999 -97.9986,264.998 -263.997,264.998l-522.002 0 0 -726.999 125.999 0 0 599.998 396.002 0c86.9968,0 138.999,-45.9965 138.999,-140 0,-93.9991 -47.9984,-145.997 -138.999,-145.997l-303 0 0 -112.003 272 0 183.999 -201.999 179.999 0z"/>
+                              <glyph unicode="S" horiz-adv-x="880" d="M608.002 0c151.998,0 226,91.0005 226,213 0,141.001 -79.0019,210.002 -226,210.002l-333.002 0c-55.9974,0 -91.0005,32.997 -91.0005,87.9977 0,55.0006 34.0022,88.9986 92.0014,88.9986l522.002 0 0 127 -522.002 0c-145,0 -223.998,-86.9968 -223.998,-204 0,-119.998 84.9991,-206.999 221.996,-206.999l334.003 0c68.0001,0 105.998,-32.0003 105.998,-93.9991 0,-56.9983 -37.9975,-95 -105.998,-95l-545.002 0 0 -127 545.002 0z"/>
+                              <glyph unicode="U" horiz-adv-x="888" d="M713.001 321.003c0,-146.004 -65.0062,-206.001 -265.003,-206.001 -199.997,0 -265.003,59.9976 -265.003,206.001l0 405.998 -130.993 0 0 -405.998c0,-225.01 112,-331.005 391.998,-331.005 282.005,0 392.994,105.995 392.994,331.005l0 405.998 -123.993 0 0 -405.998z"/>
+                              <glyph unicode="Ç" horiz-adv-x="828" d="M789.005 0l0 126.995 -394.005 0c-130.993,0 -226.005,101.002 -226.005,237.999 0,138.008 96.0082,235.012 226.005,235.012l394.005 0 0 126.995 -394.005 0c-202.999,0 -353.001,-142.006 -353.001,-356.003 0,-210.995 150.002,-370.998 353.001,-370.998l394.005 0zm-355.007 -200.993l66.9976 153.999 -132.999 0 66.0019 -153.999z"/>
+                              <glyph unicode="Í" horiz-adv-x="266" d="M197.002 0l0 727 -127.001 0 0 -727 127.001 0zm94.9968 826.999l0 78.9989 -255.999 -76.9971 0 -56.9997 255.999 54.998z"/>
+                              <glyph unicode="Ú" horiz-adv-x="888" d="M713.001 321.003c0,-146.004 -65.0062,-206.001 -265.003,-206.001 -199.997,0 -265.003,59.9976 -265.003,206.001l0 405.998 -130.993 0 0 -405.998c0,-225.01 112,-331.005 391.998,-331.005 282.005,0 392.994,105.995 392.994,331.005l0 405.998 -123.993 0 0 -405.998zm-111.004 506.004l0 78.991 -255.997 -76.9997 0 -56.9954 255.997 55.0041z"/>
+                             </font>
+                             <style type="text/css">
+                              <![CDATA[
+                               @font-face { font-family:"Good Times";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+                               .str1 {stroke-width:3.05;stroke-miterlimit:22.9256}
+                               .str3 {stroke-width:3.19;stroke-miterlimit:22.9256}
+                               .str4 {stroke-width:11.5;stroke-miterlimit:22.9256}
+                               .fnt2 {font-weight:normal;font-size:654.7px;font-family:'Good Times'}
+                               .fnt1 {font-weight:normal;font-size:2358.4px;font-family:'Good Times'}
+                               .fnt0 {font-weight:normal;font-size:2462.13px;font-family:'Good Times'}
+                              ]]>
+                             </style>
+                            </defs>
+                            <g id="Camada_x0020_1">
+                             <metadata id="CorelCorpID_0Corel-Layer"/>
+                             <polygon class="fil0 str0" points="9.88,5152.26 1602.23,5152.26 3104.78,1860.3 4714.96,8408.96 5419.82,5156.18 17683.04,5153.89 19464.68,32.1 22002.34,8522.93 22918.22,5152.9 26427.45,5152.26 26427.45,5469.02 23149.01,5474.46 22032.8,9553.27 19466.72,1240.8 18011.72,5469.04 5678.61,5469.5 4724.74,9854.51 2998.28,2828.92 1800.63,5472.23 9.88,5467.51 "/>
+                             <text x="5135.5" y="4458.38" class="fil0 str2 fnt0">CLÍNICA</text>
+                             <g transform="matrix(1.01888 0 0 1 -7739.07 1327.22)">
+                              <text x="13383.41" y="6340.47" class="fil0 str2 fnt1">PEDROSA</text>
+                             </g>
+                             <g transform="matrix(1.02526 0 0 1 -8018.01 2362.97)">
+                              <text x="13383.41" y="6340.47" class="fil0 str2 fnt2">SEGURANÇA E SAÚDE OCUPACIONAL</text>
+                             </g>
+                             <path class="fil0 str0" d="M22672.1 3637.09c15.88,-223.25 65.54,-512.68 196.35,-696.8 126.07,-177.45 370.58,-258.63 580.27,-316.28 55.33,-15.21 157.16,-41.03 215.27,-45.72 -13.9,14.23 -86.61,28.26 -106.27,33.6 -101.43,27.55 -211.69,64.7 -305.59,104.69 -319.26,135.91 -423.25,281.27 -487.18,616.02 -27.03,141.53 -49.66,351.48 -46.94,501.9 27.34,29.44 105.26,82.47 145.85,106.55 27.55,16.36 147.16,82.08 190.23,58.35 7.15,-13.98 9.86,-278.96 15.6,-327.68 20.15,-170.98 56.55,-403.94 124.05,-558.85 40.51,-92.94 79.72,-139.13 146.58,-199.46 93.13,-84.04 322.81,-173.55 474.75,-209.51 142.2,-33.66 315.38,-50.28 467.26,-40.97 21.12,1.3 152.41,12.27 157.6,10.78 -9.69,5.11 -150.22,11.89 -178.5,15.19 -53.89,6.28 -113.47,15.09 -165.74,27.38 -101.39,23.82 -204.49,51.86 -296.82,88.72 -199.4,79.62 -352.83,144.79 -452.6,319.51 -86.73,151.91 -116.88,448.9 -119.21,653.68 -0.4,34.02 -1.2,163.04 6.46,187.41 9.05,28.81 81.86,62.42 120.34,72.95 141.54,38.74 231.19,17.68 355.83,22.82 -193.81,52.6 -364.64,81.82 -562.29,26.1 -23.4,-6.59 -47.42,7.36 -72.89,12.11 -125.42,23.39 -195.5,-32.95 -280.11,-81.41 -40.27,-23.06 -76.15,-45.54 -114.72,-70.31 -47.81,-30.72 -59.38,-58.26 -63.42,-125.69 -62.8,-35.64 -101.34,-90.96 -118.45,-162.85 -22.2,-93.26 6.86,-106.26 -60.22,-56.04 -18.16,13.59 -29.58,23.06 -46.92,37.72 -67.28,56.94 -195.99,181.85 -224.63,270.09 -36.21,111.55 40.31,182.14 87.06,226.31 164.38,155.29 381.9,301.53 607.64,385.65 86.7,32.31 177.51,48.3 282.53,47.2 111.35,-1.17 187.69,-23.02 283.08,-50.4 295.67,-84.86 700.95,-223.43 976.12,-346.95 155.99,-70.02 297.31,-145.04 427.54,-236.35 120.54,-84.52 198.03,-129.96 182.81,-310.72 -5.63,-66.92 -16.8,-79.28 -46.55,-121.78 -6.29,6.56 -3.22,0.81 -6.79,11.5 -6.02,18.02 2.92,43.2 -29.21,94.83 -34.35,55.2 -106.5,91.39 -166.33,119.32 -26.44,12.35 -74.28,37.4 -99.98,44.45 -2.63,-38.13 -6.35,-42.72 20.67,-59.28 156.38,-95.86 241.43,-118.86 230.48,-330.9 -9.66,-187.05 -68.8,-361.38 -139.16,-502.52 -43.92,-88.11 -76.12,-123.64 -144.01,-177.6 -56.32,-44.75 -128.64,-86.29 -204.19,-117.62 -373.48,-154.9 -705.75,-155.68 -1093.28,-48.96 -186.16,51.26 -315.49,108.72 -435.83,212.06 -166.85,143.27 -272.08,419.66 -307.71,657.56 -7.87,52.53 -11.89,92.92 1.74,145.5 9.83,37.93 36.78,85.03 79.4,84.68z"/>
+                             <polygon class="fil0 str0" points="1567.98,6607.12 2078.65,6607.12 2078.65,7664.94 3136.47,7664.94 3136.47,8175.62 2078.65,8175.62 2078.65,9233.45 1567.98,9233.45 1567.98,8175.62 510.14,8175.62 510.14,7664.94 1567.98,7664.94 "/>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Cuidamos do trabalhador, fortalecemos sua empresa.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/pedrosa.assessoria.sso?utm_source=qr&igsh=MWh3M3VpZTc4aDZvcg==" target="_blank" class="p-2 rounded-full border border-gray-700 hover:bg-green-600 hover:border-green-600 transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram h-4 w-4" data-lov-id="src/components/Footer.tsx:26:18" data-lov-name="Icon" data-component-path="src/components/Footer.tsx" data-component-line="26" data-component-file="Footer.tsx" data-component-name="Icon" data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lucas-clayton-pedrosa-marques-014774203/" class="p-2 rounded-full border border-gray-700 hover:bg-green-600 hover:border-green-600 transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin h-4 w-4" data-lov-id="src/components/Footer.tsx:26:18" data-lov-name="Icon" data-component-path="src/components/Footer.tsx" data-component-line="26" data-component-file="Footer.tsx" data-component-name="Icon" data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Serviços</h4>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-green-600 transition-colors duration-300">Saúde Ocupacional</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-green-600 transition-colors duration-300">Treinamentos NRs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-green-600 transition-colors duration-300">Laudos Técnicos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-green-600 transition-colors duration-300">Gestão de Riscos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-green-600 transition-colors duration-300">Ergonomia</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-green-600 transition-colors duration-300">Consultoria em SST</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Links Úteis</h4>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-green-600 transition-colors duration-300">Sobre nós</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-green-600 transition-colors duration-300">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-green-600 transition-colors duration-300">Casos de sucesso</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-green-600 transition-colors duration-300">Perguntas frequentes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-green-600 transition-colors duration-300">Política de privacidades</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-green-600 transition-colors duration-300">Termos de uso</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Contato</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-5 w-5 text-green-600 mr-3 mt-0.5" data-lov-id="src/components/Footer.tsx:79:16" data-lov-name="MapPin" data-component-path="src/components/Footer.tsx" data-component-line="79" data-component-file="Footer.tsx" data-component-name="MapPin" data-component-content="%7B%22className%22%3A%22h-5%20w-5%20text-sst-green%20mr-3%20mt-0.5%22%7D"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p class="text-gray-400">
+                                Rua Castelo Branco, 1032 - Centro <br>
+                                Açailândia, MA - 65930-000
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 text-green-600 mr-3" data-lov-id="src/components/Footer.tsx:86:16" data-lov-name="Phone" data-component-path="src/components/Footer.tsx" data-component-line="86" data-component-file="Footer.tsx" data-component-name="Phone" data-component-content="%7B%22className%22%3A%22h-5%20w-5%20text-sst-green%20mr-3%22%7D"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <p class="text-gray-400">
+                               (99) 99171-2587
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-5 w-5 text-green-600 mr-3" data-lov-id="src/components/Footer.tsx:90:16" data-lov-name="Mail" data-component-path="src/components/Footer.tsx" data-component-line="90" data-component-file="Footer.tsx" data-component-name="Mail" data-component-content="%7B%22className%22%3A%22h-5%20w-5%20text-sst-green%20mr-3%22%7D"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                            <p class="text-gray-400">
+                               contato@grupopedrosa.com.br
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/+5599991712587" target="_blank" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 px-4 py-2 mt-4 bg-green-600 hover:bg-green-700 text-white w-full">
+                        Entrar em contato
+                    </a>
+                </div>
+            </div>
+            <div class="pt-10 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>
+                    © 2025 Grupo Pedrosa. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
