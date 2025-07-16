@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A Clínica Pedrosa oferece soluções em Segurança e Saúde Ocupacional. Consultoria, treinamentos e serviços especializados para a sua empresa.">
+    <meta name="keywords" content="Segurança do trabalho, Saúde ocupacional, Consultoria em SSO, Treinamentos em SSO, Gestão de eSocial, 
+        Avaliações ambientais, NR10,nr10, NR35, nr35, Acailandia, Açailândia, MA, Maranhão, Maranhao, Riscos, Riscos Psicossociais, Psicossocias, pgr, 
+        pcmso, ltcat, avaliações ambientais, medição de ruídos, ruidos, medicao, ergonomia, laudo de insalubridade, brigada de incêndio, incendio, saude, ocupacional, nr1, clinica, clinica pedrosa, 
+        grupo pedrosa, pedrosa, clinica acailandia, clínica"
+    >
+    <meta name="author" content="Luciano Júnior">
+    <meta property="og:title" content="Clínica Pedrosa">
+    <meta property="og:description" content="A Clínica Pedrosa oferece soluções em Segurança e Saúde Ocupacional. Consultoria, treinamentos e serviços especializados para a sua empresa.">
+    <meta property="og:image" content="https://www.grupopedrosa.com.br/assets/img/logo_clinica.png"> <!-- Substitua pela URL de uma imagem relevante -->
+    <meta property="og:url" content="https://www.grupopedrosa.com.br/"> <!-- Substitua pela URL do seu site -->
+    <meta property="og:type" content="website"> <!-- Substitua pela URL do seu site -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Clínica Pedrosa">
+    <meta name="twitter:description" content="A Clínica Pedrosa oferece soluções em Segurança e Saúde Ocupacional. Consultoria, treinamentos e serviços especializados para a sua empresa.">
+    <meta name="twitter:image" content="https://www.grupopedrosa.com.br/assets/img/logo_clinica.png"> <!-- Substitua pela URL de uma imagem relevante -->
+    <meta name="twitter:url" content="https://www.grupopedrosa.com.br/"> <!-- Substitua pela URL do seu site -->
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="/assets/img/favicon.png">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <title>Clínica Pedrosa - Segurança e Saúde Ocupacional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="./assets/js/cookie-banner.js"></script>
+    <script>
+        // Função para abrir e fechar o menu
+        function toggleMenu() {
+            const menu = document.getElementById('hamburger-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Função para fechar o menu ao clicar fora dele
+        window.onclick = function(event) {
+            const menu = document.getElementById('hamburger-menu');
+            const menuButton = document.getElementById('menu-button');
+            if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
+        }
+
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+                    },
+                    keyframes: {
+                        'infinite-scroll': {
+                            from: { transform: 'translateX(0)' },
+                            to: { transform: 'translateX(-100%)' },
+                        }
+                    }                    
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-white text-gray-700">
+
+    <main>
+        <div class="flex flex-col bg-green-800 justify-center p-8 min-h-screen">
+            <div class="flex align-items justify-center">
+                <img src="./assets/img/Clinica_Pedrosa.png" class="max-w-56">
+            </div>
+            <div class="text-center pt-2 text-sm text-white font-normal">
+                <p>Cuidamos do trabalhador, fortalecemos sua empresa.</p>
+            </div>
+            <div class="border-b-2 border-gray-400 pt-12"></div>
+            <div class="flex-col space-y-6 text-center p-8 text-green-800">
+                <div>
+                    <a href="https://wa.me/+5599992264752">
+                        <div class="bg-white p-4 rounded-full font-semibold text-xl flex align-items justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-check2-icon lucide-calendar-check-2"><path d="M8 2v4"/><path d="M16 2v4"/><path d="M21 14V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M3 10h18"/><path d="m16 20 2 2 4-4"/></svg>
+                            Agendamentos
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://wa.me/+5599991712587">
+                        <div class="bg-white p-4 rounded-full font-semibold text-xl flex align-items justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2-icon lucide-building-2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+                            Administrativo
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://maps.app.goo.gl/d55rtWxfDxjBptzAA">
+                        <div class="bg-white p-4 rounded-full font-semibold text-xl flex align-items justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pinned-icon lucide-map-pinned"><path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0"/><circle cx="12" cy="8" r="2"/><path d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712"/></svg>
+                            Localização
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.grupopedrosa.com.br/">
+                        <div class="bg-white p-4 rounded-full font-semibold text-xl flex align-items justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-icon lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                            Nosso Site
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="border-b-2 border-gray-400 pt-8"></div>
+            <div class="flex space-x-4 justify-center text-white pt-4">
+                <a href="https://www.instagram.com/pedrosa.assessoria.sso?utm_source=qr&igsh=MWh3M3VpZTc4aDZvcg==" target="_blank" class="p-2 rounded-full border border-green-600 hover:bg-green-600 hover:border-green-600 transition-colors duration-300 color-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram h-4 w-4" data-lov-id="src/components/Footer.tsx:26:18" data-lov-name="Icon" data-component-path="src/components/Footer.tsx" data-component-line="26" data-component-file="Footer.tsx" data-component-name="Icon" data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                </a>
+            </div>
+        </div>
+    </main>
+
+</body>
