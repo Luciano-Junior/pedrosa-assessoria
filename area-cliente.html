@@ -10,6 +10,41 @@
     <title>Clínica Pedrosa - Área do Cliente</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+        // Função para abrir e fechar o menu
+        function toggleMenu() {
+            const menu = document.getElementById('hamburger-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Função para fechar o menu ao clicar fora dele
+        window.onclick = function(event) {
+            const menu = document.getElementById('hamburger-menu');
+            const menuButton = document.getElementById('menu-button');
+            if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
+        }
+
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+                    },
+                    keyframes: {
+                        'infinite-scroll': {
+                            from: { transform: 'translateX(0)' },
+                            to: { transform: 'translateX(-100%)' },
+                        }
+                    }                    
+                },
+            },
+        };
+    </script>
 </head>
 <body class="bg-white text-gray-700">
 
@@ -87,6 +122,19 @@
                             </h3>
                             <p class="text-muted-foreground">
                                 <a href="https://clinicapedrosa.isesmt.com/" target="_blank" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 px-4 py-2 bg-sst-green hover:bg-sst-darkGreen text-white">
+                                    Acessar
+                                </a>
+                            </p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-white border border-border/40 shadow-subtle hover:shadow-card group transition-all duration-300 hover:translate-y-[-5px] text-center">
+                            <div class="mb-5 inline-flex p-3 rounded-xl bg-green-600 bg-opacity-25 text-green-700 text-opacity-80 group-hover:bg-green-600 group-hover:text-white transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 56 56" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M13.504 50.957h12.844a12.9 12.9 0 0 1-3.07-3.773h-9.563c-2.414 0-3.703-1.243-3.703-3.586V8.137c0-2.32 1.265-3.657 3.703-3.657h24.492c2.344 0 3.68 1.313 3.68 3.657v20.437a12.9 12.9 0 0 1 3.773 3.047V8.066c0-4.898-2.414-7.359-7.265-7.359H13.504c-4.828 0-7.266 2.484-7.266 7.36V43.62c0 4.898 2.438 7.336 7.266 7.336m3.586-36.914h17.766c.82 0 1.453-.656 1.453-1.477 0-.796-.633-1.406-1.453-1.406H17.09c-.867 0-1.477.61-1.477 1.406 0 .82.61 1.477 1.477 1.477m0 8.18h17.766c.82 0 1.453-.657 1.453-1.477 0-.797-.633-1.406-1.453-1.406H17.09c-.867 0-1.477.61-1.477 1.406 0 .82.61 1.477 1.477 1.477m18.047 28.734c2.11 0 4.101-.61 5.742-1.71l5.273 5.296c.563.539 1.078.75 1.711.75 1.078 0 1.899-.844 1.899-2.04 0-.515-.258-1.03-.656-1.429l-5.344-5.343a10.53 10.53 0 0 0 1.898-6.047c0-5.836-4.71-10.547-10.523-10.547s-10.57 4.758-10.57 10.547c0 5.812 4.757 10.523 10.57 10.523m0-3.352c-3.985 0-7.219-3.21-7.219-7.171 0-3.914 3.234-7.172 7.219-7.172 3.914 0 7.148 3.258 7.148 7.172 0 3.96-3.21 7.171-7.148 7.171"/></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">
+                                Resultado Toxicológico
+                            </h3>
+                            <p class="text-muted-foreground">
+                                <a href="https://parceiro.chromatox.com.br/resultado/" target="_blank" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 px-4 py-2 bg-sst-green hover:bg-sst-darkGreen text-white">
                                     Acessar
                                 </a>
                             </p>
